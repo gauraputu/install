@@ -3,6 +3,12 @@ echo 'installing necessary packages'
 sudo pacman -S codeoss firefox chrome neovim nodejs
 echo 'nessacary packages install compelete'
 
+# setup node
+echo 'installing nvm'
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+source ~/.bashrc
+echo 'run $nvm list then $nvm install lts/latest-package-name'
+
 # setup npm global packages
 echo 'set up npm'
 npm install -g mocha typescript
